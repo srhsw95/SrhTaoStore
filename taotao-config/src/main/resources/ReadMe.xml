@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ReadMe -->
+
+<!-- 
+		taotao-config 项目 用于存放taotao商城项目的相关配置文件
+		
+		1、sql文件 ：taotao.sql
+		
+		项目启动，须启动nginx服务
+		2、nginx配置文件：版本：nginx-1.5.1   配置文件：nginx.conf
+		
+					Windows下启动,关闭Nginx命令
+					启动
+					直接点击Nginx目录下的nginx.exe    或者    cmd运行start nginx
+					关闭
+					nginx -s stop    或者    nginx -s quit
+					stop表示立即停止nginx,不保存相关信息
+					quit表示正常退出nginx,并保存相关信息
+					重启(因为改变了配置,需要重启)
+					nginx -s reload
+			
+		
+		host配置文件：使用 SwitchHosts软件来切换host映射
+					具体配置如下：
+					
+					# common
+
+					192.168.0.47 maven.taotao.com
+					192.168.0.47 svn.taotao.com
+					
+					# --------------------------------------------------
+					# 淘淘商城开发环境
+					
+					127.0.0.1 manage.taotao.com
+					127.0.0.1 image.taotao.com
+					127.0.0.1 www.taotao.com
+					127.0.0.1 sso.taotao.com
+					127.0.0.1 static.taotao.com
+					127.0.0.1 order.taotao.com
+					127.0.0.1 solr.taotao.com
+					127.0.0.1 search.taotao.com
+					127.0.0.1 cart.taotao.com
+					127.0.0.1 ucenter.taotao.com
+					114.80.119.246 eapusher.dice.se
+					
+		
+-->
